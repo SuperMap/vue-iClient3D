@@ -1,19 +1,5 @@
 # <center>vue-iClient3D</center>
 
-# Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost
-npm run dev
-
-```
-
-注：项目存放文件夹路径中不能有中文字符，否则启动会有异常报错。
-
-
 # 简介
 ### 特点：
 - 采用当前Vue3升级组件，相比原来有更快的速度和更好的性能
@@ -23,14 +9,34 @@ npm run dev
 ### 示例：https://www.supermapol.com/earth/vue-iClient3D/index.html
 
 
-# 开发
+# 快速使用
 #### Vue工程，NPM 安装：
 
 ``` bash
 npm install vue-iclient3d --save
 ```
 
-##### 1、修改main.js文件：
+##### 1、修改index.html文件：
+
+- 在index.html里引入SuperMap3D等资源文件。
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.supermapol.com/earth/SuperMap3D/SuperMap3D.js"></script>
+  <title>webgl3d</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+```
+
+##### 2、修改main.js文件：
 
 ``` js
 
@@ -75,26 +81,6 @@ import 'vue-iclient3d/index.css'
 app.use(webgl3d)  
 app.mount('#app')
 
-```
-
-##### 2、修改index.html文件：
-
-- 在index.html里引入SuperMap3D等资源文件。
-
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://www.supermapol.com/earth/SuperMap3D/SuperMap3D.js"></script>
-  <title>webgl3d</title>
-</head>
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
-</html>
 ```
 
 ##### 3、在App.vue里测试使用量算功能组件：
