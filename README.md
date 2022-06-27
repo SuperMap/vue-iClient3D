@@ -37,7 +37,7 @@ npm install vue-iclient3d --save-d
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// 注册antd 需要映入的antd组件 请查看registerCom文件夹下的register-antdv.js
+// 注册antd 需要引入的antd组件 请查看registerCom文件夹下的register-antdv.js
 import { registerApp } from './registerCom'
 
 // 引入打包之后的组件
