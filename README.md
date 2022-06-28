@@ -8,6 +8,7 @@
 
 ### 示例：https://www.supermapol.com/earth/vue-iClient3D/index.html
 
+#### Vue目前提供的组件可以参考示例项目中，如您在使用过程中遇到问题，或更好的使用建议，欢迎提issues，开发人员看到会及时给予处理
 
 # 快速使用
 #### Vue工程，NPM 安装：
