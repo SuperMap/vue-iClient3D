@@ -77,7 +77,7 @@ app.use(Button)
     
 // 引入vue-iclient3d组件包
 import webgl3d from 'vue-iclient3d'
-import 'vue-iclient3d/index.css'
+import 'vue-iclient3d/lib/index.css'
 app.use(webgl3d)  
 app.mount('#app')
 
