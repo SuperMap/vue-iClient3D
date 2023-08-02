@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+* scss基础配置文件
+*/
+:root {
+  --theme-bg-color: #3499e5;
+  --panel-bg-color: rgb(249, 249, 249);
+  --font-color: #333333;
+  --font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+  --border-color: #999999;
+  --content-font-size:14px;
+  --title-font-size:16px;
+  --tip-font-size:12px;
+  --panel-width:320px;
+  --panel-max-height:520px;
+  --shadow-color:rgba(128, 128, 128, 0.5);
+}/*# sourceMappingURL=base.css.map */
