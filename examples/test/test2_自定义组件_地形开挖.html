@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="icon" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- vue + element-plus-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="../public/element-plus/index.css">
+    <script src="../public/element-plus/index.full.js"></script>
+    <!-- SuperMap3D -->
+    <link href="../public/SuperMap3D/Widgets/widgets.css" rel="stylesheet">
+    <script src="../public/SuperMap3D/SuperMap3D.js"></script>
+    <!-- 组件包 -->
+    <script src="../dist/components_basis.js"></script>
+    <title>自定义组件-CDN引入-demo</title>
+</head>
+<style>
+    html,
+    body,
+    #app,
+    #SuperMap3DContainer {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .demo {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        background-color: rgb(253, 252, 252);
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div id="SuperMap3DContainer"></div>
+        <div class="demo">
+            <h3>自定义界面</h3>
+            <button @click="digTerrain">开挖</button>
+            <button @click="clearDig" style="margin-left: 8px;">清除</button>
+        </div>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            setup(props) {
+                //初始化地球和加载测试地形场景
+                Vue.onMounted(() => {
+                    viewer = new SuperMap3D.Viewer("SuperMap3DContainer");
+                    viewer.scene.open('http://www.supermapol.com/realspace/services/3D-ZF_normal/rest/realspace');
+                });
+                // 引入组件功能函数
+                let { digTerrain, clearDig } = webgl3d.terrainOperation(props)
+                return { digTerrain, clearDig }
+            }
+        });
+        app.mount("#app");
+    </script>
+</body>
+
+</html>

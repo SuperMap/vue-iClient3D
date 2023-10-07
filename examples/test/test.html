@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- vue + element-plus-->
+    <script src="https://www.supermapol.com/earth/vue-iEarth/examples/public/js/vue.global.js"></script>
+    <link rel="stylesheet" href="https://www.supermapol.com/earth/vue-iEarth/examples/public/element-plus/index.css">
+    <script src="https://www.supermapol.com/earth/vue-iEarth/examples/public/element-plus/index.full.js"></script>
+    <!-- SuperMap3D -->
+    <link href="https://www.supermapol.com/earth/vue-iEarth/examples/public/SuperMap3D/Widgets/widgets.css"
+        rel="stylesheet">
+   <script src="https://www.supermapol.com/earth/vue-iEarth/examples/public/SuperMap3D/SuperMap3D.js"></script>
+    <!-- 组件包 -->
+    <link href="https://www.supermapol.com/earth/vue-iEarth/examples/dist/components.css" rel="stylesheet">
+    <script src="https://www.supermapol.com/earth/vue-iEarth/examples/dist/components.js"></script>
+    <title>完整组件-CDN引入-量算</title>
+</head>
+<body>
+      <div id="app">
+        <sm3d-viewer scene-url="http://localhost:8090/iserver/services/3D-test/rest/realspace">
+            <!-- <sm3d-point-symbol></sm3d-point-symbol> -->
+            <sm3d-measure></sm3d-measure>
+        </sm3d-viewer>
+    </div>
+    <script>
+        const app = Vue.createApp({});
+        app.use(webgl3d);  // webgl3d为全局引入时绑定在window的对象名
+        app.mount("#app");
+    </script>
+</body>
+<!-- 根据使用具体组件的需要引入其他第三方依赖 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.2/dist/echarts.min.js" async></script>
+<script src="https://www.supermapol.com/earth/vue-iEarth/examples/public/js/axios.min.js" async></script> -->
+</html>
