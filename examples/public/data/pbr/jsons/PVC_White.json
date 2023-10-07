@@ -1,0 +1,67 @@
+{
+  "material": {
+    "alphaCutoff": 1,
+    "alphaMode": "OPAQUE",
+    "cullMode": "none",
+    "fragmentShaderName": "",
+    "id": "Test_Normal",
+    "pbrMetallicRoughness": {
+      "baseColor": {
+        "w": 1,
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "baseColorTextureCoordIndex": 0,
+      "baseColorTextureIndex": 0,
+      "baseColorTextureMotion": {
+        "OffsetPeriod": 0.0,
+        "OffsetSpeedU": 0.0,
+        "OffsetSpeedV": 0.0,
+        "TilingPeriod": 0.0,
+        "TilingSpeedU": 1.0,
+        "TilingSpeedV": 1.0
+      },
+      "emissiveFactor": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "emissiveTextureCoordIndex": -1,
+      "emissiveTextureIndex": -1,
+      "emissiveTextureMotion": {
+        "OffsetPeriod": 0.0,
+        "OffsetSpeedU": 0.0,
+        "OffsetSpeedV": 0.0,
+        "TilingPeriod": 0.0,
+        "TilingSpeedU": 1.0,
+        "TilingSpeedV": 1.0
+      },
+      "metallicFactor": 0.0,
+      "metallicRoughnessTextureCoordIndex": -1,
+      "metallicRoughnessTextureIndex": -1,
+      "normalTextureCoordIndex": 0,
+      "normalTextureIndex": 2.0,
+      "normalTextureScale": 1.0,
+      "occlusionTextureCoordIndex": 0,
+      "occlusionTextureIndex": -1,
+      "occlusionTextureStrength": 1.0,
+      "roughnessFactor": 0.35
+    },
+    "textureunitstates": [
+      {
+        "textureunitstate": {
+          "addressmode": {
+            "u": 0,
+            "v": 0,
+            "w": 0
+          },
+          "filteringoption": 0,
+          "filtermax": 2,
+          "filtermin": 2
+        }
+      }
+    ],
+    "vertexShaderName": ""
+  }
+}
